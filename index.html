@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Session 3 & 4 Front End Development</title>
-    <link rel="stylesheet" href="styles.css">
     
+    <!-- Adding Internal CSS -->
+     <!-- NB Inline CSS has more priority than Internal CSS -->
+     <!-- Write internal CSS insode head just before body see below -->
+      <!-- Selectors -->
+       <!-- 
+      1. HTML tag 
+      2. Class - class has more preference that HTML tag, class is very flexible and can be applied to any tag
+      3.ID has to be unique
+      -->
+<title>Session 3 & 4 Front End Development</title>
+<style>
+  body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;  
+    color: beige;
+  }
+  h2{
+    color: brown;
+  }
+  p{
+    background-color: cyan;
+  }
+.para{
+  background: red;
+}
+#para_1{
+color: green;
+background-color: blue;
+}
+</style>
 </head>
 <body="font-family: verdana">
     <!-- Adding inline CSS -->
@@ -53,6 +81,9 @@
     </div>   
     <div><iframe src="http://computo.ceiich.unam.mx/webceiich/docs/libro/Communication_and_Human_Rights.pdf" frameborder="0" type="application/pdf"></iframe>
     </div> 
-  
+  <p>Hello Checking</p>
+  <p class="para">this is fine</p>
+  <h1>Hi there</h1>
+  <p id="para_1"> where do you stay</p>
 </body>
 </html>
